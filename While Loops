@@ -1,0 +1,68 @@
+#Examples:
+
+**Instead of == we use != AKA (Not equal) so that input_user is not equal to magic_word
+  Also COLON (:) Cannot be forgotten
+  
+magic_word = "Please"
+input_user = input("What is the magic word? ")
+
+while input_user != magic_word:
+    input_user = input("What is the magic word? ")
+
+print("You are welcome! ")
+
+Result:
+What is the magic word? Essie
+What is the magic word? John
+What is the magic word? Please
+You are welcome!
+
+# import randrage
+from random import randrange
+
+#get a random number
+random_number = randrange(1,11)
+
+# print number
+print(random_number)
+
+*The code will publish a random code everytime the code is run
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python While-loop.py
+5
+(base) estheramanya@Esthers-MacBook ~ % python While-loop.py
+4
+
+*** Guessing game example
+
+# import randrage
+from random import randrange
+
+#get a random number
+random_number = randrange(1,11)
+
+# print number
+print(random_number)
+
+# get a number from user
+guess = input("Guess a number between 1 and 10: ")
+
+#typecast to int
+guess = int(guess)
+
+#check
+while random_number != guess:
+    print(guess, "is not the one! ")
+    guess = input("Guess a number between 1 and 10? ")
+    guess = int(guess)
+
+print("Well done! The number was" ,random_number)
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python While-loop.py
+8
+Guess a number between 1 and 10: 7
+7 is not the one! 
+Guess a number between 1 and 10? 8
+Well done! The number was 8
