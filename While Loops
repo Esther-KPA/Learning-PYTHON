@@ -66,3 +66,80 @@ Guess a number between 1 and 10: 7
 7 is not the one! 
 Guess a number between 1 and 10? 8
 Well done! The number was 8
+
+
+*** Using "If" within "While loops to give hint in "guess game"
+
+# import randrage
+from random import randrange
+
+#get a random number
+random_number = randrange(1,11)
+
+# get a number from user
+guess = input("Guess a number between 1 and 50: ")
+
+#typecast to int
+guess = int(guess)
+
+#check  : The sign is "greater than" because we can print" 
+and give hint that it should be lower else: print lower if the number 
+to be guessed is still low
+while random_number != guess:
+    if(guess > random_number):
+        print("The random number is lower")
+    else:
+        print("The random number is lower")
+
+    guess = input("Guess a number between 1 and 50? ")
+    guess = int(guess)
+
+print("Well done! The number was" ,random_number)
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python While-loop.py
+Guess a number between 1 and 50: 20
+The random number is lower
+Guess a number between 1 and 50? 19
+The random number is lower
+Guess a number between 1 and 50? 17
+The random number is lower
+Guess a number between 1 and 50? 10
+The random number is lower
+Guess a number between 1 and 50? 9
+The random number is lower
+Guess a number between 1 and 50? 8
+Well done! The number was 8
+
+*** Back to Power-rangers
+
+# import random random = Any number , randrange = Number of power rangers
+from random import randrange
+
+# make a list
+power_rangers = ["Red", "Yellow", "Blue", "Pink", "Black", "Green"]
+random_number = randrange(6)
+
+print(power_rangers[random_number])
+
+*** TASK : Make a guessing game with Power rangers
+
+# import random
+from random import randrange
+
+# make a list
+power_rangers = ["Red", "Yellow", "Blue", "Pink", "Black", "Green"]
+random_number = randrange(6)
+
+print(power_rangers[random_number])
+
+guess = input("Guess Esthers favourite power ranger? ")
+
+guess = (guess)
+
+while random_number != guess:
+    print(guess, "it is not the one! ")
+    guess = input("Guess Esthers favourite power ranger? ")
+    guess = (guess)
+
+print("Yes! you got it!" ,random_number)
