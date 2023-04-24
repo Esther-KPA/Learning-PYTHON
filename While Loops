@@ -122,7 +122,7 @@ random_number = randrange(6)
 
 print(power_rangers[random_number])
 
-*** TASK : Make a guessing game with Power rangers
+*** TASK : Make a guessing game with Power rangers : ADD CORRECT CODE
 
 # import random
 from random import randrange
