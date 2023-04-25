@@ -1,0 +1,234 @@
+*** 
+blue_ranger = {
+    "name" : "Billy Cranston",
+    "ranger" : "Mighty Morphin Blue Ranger",
+    "call" : "Triceratops"
+}
+
+print(blue_ranger)
+
+Result:
+base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+{'ranger': 'Mighty Morphin Blue Ranger', 'call': 'Triceratops', 'name': 'Billy Cranston'}
+
+*** If you want to be more specific
+
+blue_ranger = {
+    "name" : "Billy Cranston",
+    "ranger" : "Mighty Morphin Blue Ranger",
+    "call" : "Triceratops"
+}
+
+print(blue_ranger["name"])
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+Billy Cranston
+
+*** Using values in Dictionaries
+
+#key and value
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+print(power_rangers[1])
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+{'ranger': 'Blue', 'name': 'Billy Cranston', 'roll_call': 'Triceratops'}
+
+****
+#key and value
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+print(power_rangers[1]["name"])
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+Billy Cranston
+
+*** You can add more values and keys
+
+#key and value
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+pink_ranger = {
+    "ranger": "Mighty Morphin Pink Ranger",
+    "name": "Kimberly Ann Mart",
+    "roll call": "Pterodactyl",
+}
+
+power_rangers[4] = pink_ranger
+print(power_rangers)
+
+Result: 
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+{1: {'ranger': 'Blue', 'name': 'Billy Cranston', 'roll_call': 'Triceratops'}, 2: 
+{'ranger': 'Red', 'name': 'jason Lee Scott', 'roll_call': 'Tyrannosaurus'}, 3: 
+{'ranger': 'Mighty Morphin Yellow Range', 'name': 'Trini Kwan', 'roll_call': 'Saber-toot'}, 4: {'ranger': 'Mighty Morphin Pink Ranger', 'name': 'Kimberly Ann Mart', 'roll call': 'Pterodactyl'}}
+
+*** You can also overwrite positions by changing the value
+
+#key and value : The number / value in power_rangers[...] affects the position and 
+removes the initally existing value & text
+
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+pink_ranger = {
+    "ranger": "Mighty Morphin Pink Ranger",
+    "name": "Kimberly Ann Mart",
+    "roll call": "Pterodactyl",
+}
+
+power_rangers[1] = pink_ranger
+print(power_rangers)
+
+Result:
+base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+{1: {'ranger': 'Mighty Morphin Pink Ranger', 'name': 'Kimberly Ann Mart', 'roll call': 'Pterodactyl'}, 
+2: {'ranger': 'Red', 'name': 'jason Lee Scott', 'roll_call': 'Tyrannosaurus'}, 
+3: {'ranger': 'Mighty Morphin Yellow Range', 'name': 'Trini Kwan', 'roll_call': 'Saber-toot'}}
+
+*** You can also count the number of values
+
+#key and value
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+pink_ranger = {
+    "ranger": "Mighty Morphin Pink Ranger",
+    "name": "Kimberly Ann Mart",
+    "roll call": "Pterodactyl",
+}
+
+power_rangers[4] = pink_ranger
+
+print("There are currently",len(power_rangers),"Rangers")
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+('There are currently', 4, 'Rangers')
+
+**** Adding values to the List
+
+#key and value
+power_rangers = {
+    1: {"ranger": "Blue", "name": "Billy Cranston", "roll_call": "Triceratops"},
+    2: {"ranger": "Red", "name": "jason Lee Scott", "roll_call": "Tyrannosaurus"},
+    3: {"ranger": "Mighty Morphin Yellow Range", "name": "Trini Kwan", "roll_call": "Saber-toot"},
+}
+
+pink_ranger = {
+    "ranger": "Mighty Morphin Pink Ranger",
+    "name": "Kimberly Ann Mart",
+    "roll call": "Pterodactyl",
+}
+
+power_rangers[4] = pink_ranger
+
+black_ranger = {
+    "ranger": "Mighty Morphin Black Ranger",
+    "name": "Zach Taylor",
+    "roll call": "Mostodon",
+}
+
+next_item = len(power_rangers) + 1
+
+power_rangers[next_item] = black_ranger
+
+print(power_rangers)
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+{1: {'ranger': 'Blue', 'name': 'Billy Cranston', 'roll_call': 'Triceratops'}, 
+2: {'ranger': 'Red', 'name': 'jason Lee Scott', 'roll_call': 'Tyrannosaurus'}, 
+3: {'ranger': 'Mighty Morphin Yellow Range', 'name': 'Trini Kwan', 'roll_call': 'Saber-toot'}, 
+4: {'ranger': 'Mighty Morphin Pink Ranger', 'name': 'Kimberly Ann Mart', 'roll call': 'Pterodactyl'}, 
+5: {'ranger': 'Mighty Morphin Black Ranger', 'name': 'Zach Taylor', 'roll call': 'Mostodon'}}
+
+*** To count the list
+
+As similar to previous code + Add
+next_item = len(power_rangers) + 1
+
+power_rangers[next_item] = black_ranger
+
+print(len(power_rangers))
+
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+5
+
+*** To print out list;
+
+As similar to previous code + Add
+
+next_item = len(power_rangers) + 1
+power_rangers[next_item] = black_ranger
+
+for key, value in power_rangers.items():
+    print(value)
+
+Result:
+<A list of everything>
+
+**** To be more specific ; Nice for datasets, if you want to do calculations on multiple items
+As similar to previous code + Add
+
+next_item = len(power_rangers) + 1
+power_rangers[next_item] = black_ranger
+
+for key, value in power_rangers.items():
+  print(value["roll_call"])
+  
+Result:
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+Triceratops
+Tyrannosaurus
+Saber-toot
+Pterodactyl
+Mostodon
+
+*** To add more info and print out text
+As similar to previous code + Add
+
+next_item = len(power_rangers) + 1
+power_rangers[next_item] = black_ranger
+
+for id, info in power_rangers.items():
+   name = info["name"]
+   ranger  = info["ranger"]
+   call = info["roll_call"]
+   print("There is the", ranger, "who yells", call, "when Morphin and is secretly",name)
+   
+Result:
+Mostodon
+(base) estheramanya@Esthers-MacBook ~ % python Dictionaries.py
+('There is the', 'Blue', 'who yells', 'Triceratops', 'when Morphin and is secretly', 'Billy Cranston')
+('There is the', 'Red', 'who yells', 'Tyrannosaurus', 'when Morphin and is secretly', 'jason Lee Scott')
+('There is the', 'Mighty Morphin Yellow Range', 'who yells', 'Saber-toot', 'when Morphin and is secretly', 'Trini Kwan')
+('There is the', 'Mighty Morphin Pink Ranger', 'who yells', 'Pterodactyl', 'when Morphin and is secretly', 'Kimberly Ann Mart')
+('There is the', 'Mighty Morphin Black Ranger', 'who yells', 'Mostodon', 'when Morphin and is secretly', 'Zach Taylor')
+
+
+
+
+
