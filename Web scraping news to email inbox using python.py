@@ -47,7 +47,7 @@ MY_EMAIL = os.environ['confidential']
 msg = EmailMessage()
 msg['From'] = MY_EMAIL
 msg['To']   = USER_EMAIL
-msg['Subject'] = " Hello ! Today's TOP news HEADLINES in Uganda >>"
+msg['Subject'] = " Hello Esther! Today's TOP news HEADLINES in Uganda >>"
 
 with open(file_loc,'rb') as f:
     N_file = f.read()
